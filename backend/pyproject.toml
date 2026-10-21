@@ -1,0 +1,19 @@
+[project]
+name = "acemock-backend"
+version = "0.1.0"
+description = "AceMock backend - AI mock-interview platform with rubric grading"
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+# B008: FastAPI Depends() in defaults is idiomatic.
+# UP042: str+Enum is intentional for SQLAlchemy/Pydantic enum clarity.
+ignore = ["B008", "UP042"]
+
+[tool.ruff.lint.per-file-ignores]
+# Seed data contains long literal question/answer strings that should not wrap.
+"scripts/*" = ["E501"]

@@ -1,0 +1,18 @@
+fastapi>=0.143,<0.144
+# Floor for the starlette advisories fixed in 1.3.1 (PYSEC-2026-248/249 and earlier).
+starlette>=1.3.1
+uvicorn[standard]>=0.34,<0.35
+sqlalchemy[asyncio]>=2.0.36,<2.1
+asyncpg>=0.30,<0.31
+alembic>=1.14,<1.15
+pgvector>=0.3.6,<0.5
+pydantic>=2.10,<3
+pydantic-settings>=2.7,<3
+python-dotenv>=1.0,<2
+httpx>=0.28,<0.29
+anthropic>=0.42,<1
+openai>=1.59,<3
+tenacity>=9.0,<10
+python-multipart>=0.0.20
+pyjwt[crypto]>=2.10,<3
+stripe>=11.4,<13
